@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayout"
+    android:background="@color/background"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:fontFamily="serif-monospace"
+        android:text="SignUp"
+        android:textColor="@color/gray"
+        android:textSize="40sp" />
+
+
+    <EditText
+        android:id="@+id/email"
+        style="@style/style_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:hint="Email Address"
+        android:inputType="textWebEmailAddress"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/gray" />
+
+    <EditText
+        android:id="@+id/password"
+        style="@style/style_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="199dp"
+        android:hint="Password"
+        android:inputType="textWebPassword"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/gray" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="serif-monospace"
+        android:layout_alignStart="@+id/chk_box"
+        android:layout_alignTop="@+id/radio_gender"
+        android:text="gender:"
+        android:textColor="@color/gray"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="64dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/radio_male"
+            android:textColor="@color/gray" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_female"
+            android:textColor="@color/gray"
+
+            />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chk_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="214dp"
+        android:checked="true"
+        android:text="@string/terms"
+        android:textColor="@color/gray"
+        android:textSize="17sp" />
+
+
+    <Button
+        android:id="@+id/signup1_btn"
+        style="@style/style_button_dark"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="135dp"
+        android:text="SignUp" />
+
+
+
+
+
+
+</RelativeLayout>

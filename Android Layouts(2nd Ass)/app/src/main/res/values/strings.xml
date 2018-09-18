@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SignUp</string>
+    <string name="radio_male">male</string>
+    <string name="radio_female">female</string>
+    <string name="terms">*agree to the terms and conditions</string>
+    <style name="email">Email Address</style>
+    <style name="password">Password</style>
+
+    <!--EditText Error-->
+    <string name="erroremail">Valid email Required</string>
+    <string name="errorpassword">Missing Password</string>
+
+</resources>
