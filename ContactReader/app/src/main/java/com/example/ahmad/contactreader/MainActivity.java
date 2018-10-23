@@ -89,6 +89,8 @@ public class MainActivity extends AppCompatActivity {
         StringBuilder builder = new StringBuilder();
         ContentResolver contentResolver = getContentResolver();
         Cursor cursor = contentResolver.query(ContactsContract.Contacts.CONTENT_URI,null,null,null,null);
+        int count = cursor.getCount();
+        builder.append("Total Contacts: ").append(count).append("\n\n");
         if(cursor!=null && cursor.getCount()>0){
             while(cursor.moveToNext()) {
                 String id = cursor.getString(cursor.getColumnIndex(ContactsContract.Contacts._ID));
